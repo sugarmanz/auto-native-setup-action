@@ -18,3 +18,5 @@ else
   echo "Failed to download Auto binary: $URL"
   exit 1
 fi
+
+auto --version
