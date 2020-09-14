@@ -14,3 +14,6 @@ runs:
   steps:
     - run: ${{ github.action_path }}/install-${{ inputs.platform }}.sh
       shell: bash
+      env:
+        AUTO_VERSION: ${{ inputs.version }}
+        AUTO_PLATFORM: ${{ inputs.platform }}
