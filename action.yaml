@@ -1,0 +1,16 @@
+name: 'Setup Auto Linux'
+description: 'Install Intuit Auto release management native binary'
+inputs:
+  version:
+    description: 'Version of Auto'
+    required: false
+    default: 'latest'
+  platform:
+    description: 'Target platform'
+    required: false
+    default: 'linux'
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/install-${{ inputs.platform }}.sh
+      shell: bash
