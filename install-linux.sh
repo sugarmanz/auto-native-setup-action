@@ -20,3 +20,4 @@ else
 fi
 
 auto --version
+rm -rf ./auto-linux*
