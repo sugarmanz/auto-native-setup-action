@@ -13,7 +13,7 @@ fi
 if wget -q "$URL" > /dev/null; then
   gunzip -k ./auto-linux.gz && \
   chmod +x ./auto-linux && \
-  mv ./auto-linux /usr/local/bin/auto
+  sudo mv ./auto-linux /usr/bin/auto
 else
   echo "Failed to download Auto binary: $URL"
   exit 1
