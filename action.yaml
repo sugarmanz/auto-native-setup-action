@@ -9,6 +9,11 @@ inputs:
     description: 'Target platform'
     required: false
     default: 'linux'
+    
+branding:
+  icon: 'box'  
+  color: 'green'
+
 runs:
   using: "composite"
   steps:
